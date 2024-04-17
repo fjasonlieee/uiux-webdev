@@ -1,0 +1,43 @@
+/* ini untuk pilih class */
+.css_styling {
+    color: red;
+    background-color: black;
+    padding: 20px;
+    border: 10px groove gray;
+}
+
+/* ini untuk pilih id */
+#test {
+    border: 10px dotted blue;
+    border-radius: 60px;
+}
+
+/* ini untuk pilih elemen */
+div {
+    background-color: gray;
+}
+
+p {
+    color:blue;
+    font-size: 50px; 
+}
+
+h1 {
+    font-size: 200px;
+    font-style:italic;
+    font-weight: 100;
+    line-height: 2px;
+}
+
+/* advance element targeting */
+.test2 > p {
+    color: red;
+}
+
+/* multiple targeting */
+.internal_styling, .css_styling, #text {
+    font-size: 30px;
+    font-family: "Outfit";
+    color: white;
+    font-style:italic;
+}
