@@ -660,6 +660,7 @@ h3 {
     background-color: #f8f8f8;
     font-family: "Fraunces";
     margin-bottom: 2em;
+    z-index: 100;
 }
 
 .reviewBox input:focus{
