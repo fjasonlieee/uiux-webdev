@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <link href="normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -14,7 +15,7 @@
     <nav class="navigation">
         <a href="#">Menu</a>
         <a href="#">Catering</a>
-        <img class="logoKedaton" src="/UAS/ASSET/logo rmkedaton.png"></img>
+        <img class="logoKedaton" src="/UAS/ASSET/logormkedaton.png"></img>
         <a href="#">Lokasi</a>
         <a href="#">Kontak</a>
     </nav>
@@ -27,22 +28,27 @@
             <h2 class="text1">Rumah Makan Kedaton menyediakan nasi campur Bali ternikmat di Pulau Bali.</h2>
             <h3 class="text2">Kami sudah menyajikan kuliner
             spesial Bali sejak tahun 1976.</h3>
+            <button class="lihatLokasi">Lokasi Kami</button>
         </div>
         <div class="parallax">
             <img src="/UAS/ASSET/Piring.png" id="piring">
-            <img src="/UAS/ASSET/Kacang Belakang.png" id="kacangBelakang">
-            <img src="/UAS/ASSET/Ayam Belakang.png" id="ayamBelakang">
+            <img src="/UAS/ASSET/KacangBelakang.png" id="kacangBelakang">
+            <img src="/UAS/ASSET/AyamBelakang.png" id="ayamBelakang">
             <img src="/UAS/ASSET/Sate.png" id="sate">
             <img src="/UAS/ASSET/Nasi.png" id="nasi">
-            <img src="/UAS/ASSET/Ayam Depan.png" id="ayamDepan">
-            <img src="/UAS/ASSET/Kacang Depan.png" id="kacangDepan">
-            <img src="/UAS/ASSET/Jeruk Nipis.png" id="jeruk">
+            <img src="/UAS/ASSET/AyamDepan.png" id="ayamDepan">
+            <img src="/UAS/ASSET/KacangDepan.png" id="kacangDepan">
+            <img src="/UAS/ASSET/JerukNipis.png" id="jeruk">
         </div>
     </section>
     <section class="hero3">
         <h2 class="menu">Menu Kami</h2>
         <div class="card">
-            <div class="carousel">
+            <div class="buttons">
+              <button id="prevslide" class="slide-button material-symbols-outlined">chevron_left</button>
+             <button id="nextslide" class="slide-button material-symbols-outlined">chevron_right</button>
+            </div>
+            <div class="carousel" id="carousel">
                 <img src="/UAS/ASSET/3.jpg" alt="img">
                 <img src="/UAS/ASSET/4.jpg" alt="img">
                 <img src="/UAS/ASSET/5.jpg" alt="img">
@@ -51,10 +57,78 @@
                 <img src="/UAS/ASSET/8.jpg" alt="img">
                 <img src="/UAS/ASSET/11.jpg" alt="img">
             </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="hero4">
+        <div class="kambojaParallax">
+            <img src="/UAS/ASSET/Kamboja.png" id="kamboja1">
+            <img src="/UAS/ASSET/Kamboja.png" id="kamboja2">
+            <img src="/UAS/ASSET/Kamboja.png" id="kamboja3">
+        </div>
         <h2 class="layanan">Layanan Kami</h2>
+        <div class="container">
+            <div class="indoorSpace">
+                <img src="/UAS/ASSET/indoorSpace.jpg">
+                <div class="indoorSpaceText">
+                    <h2>large indoor space</h2>
+                    <h3>with <br/>free wifi</h2>
+                </div>
+            </div>
+            <div class="meetingRoom">
+                <img src="/UAS/ASSET/meetingRoom.jpg">
+                <div class="meetingRoomText">
+                    <h2>private meeting room</h2>
+                    <h3>fully air-conditioned</h2>
+                </div>
+            </div>
+            <div class="delivery">
+                <img src="/UAS/ASSET/freeDelivery.jpg">
+                <div class="deliveryText">
+                    <h2>free delivery</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="hero5">
+        <div class="hero5background">
+            <img src="/UAS/ASSET/pattern2.svg" id="pattern2">
+            <img src="/UAS/ASSET/pattern.svg" id="pattern">
+        </div>
+        <div class="topReviews">
+            <div class="review1">
+                <p>“Salah satu nasi campur terenak di Bali. Dendeng daging dan peyek udangnya favorit banget. Tempatnya juga nyaman dan bersih.”</p>
+                <h3 id="namaReview">-Aisyah Putri Shadiqaa-</h3>
+            </div>
+            <div class="review2">
+                <p>“Pilihan makanan beragam dan cita rasanya tidak berubah dari dulu sampai sekarang. Tempatnya cukup nyaman dan bersih, sangat recomended.”</p>
+                <h3 id="namaReview">-Arifin Tirta Wijata-</h3>
+            </div>
+            <div class="review3">
+                <p>“Bicara kuliner Bali, salah satu yang khas dan sangat populer di kalangan wisatawan dari dulu banget, itu nasi campur. Keistimewaan Kedaton dibanding restoran nasi campur Bali yang masih eksis adalah perpaduan antara cita rasa klasik dan kenyamanan restoran modern.”</p>
+                <h3 id="namaReview">-Adi Arifin-</h3>
+            </div>
+        </div>
+        <div class="reviewBox">
+            <h3>Tulis Review Anda</h3>
+            <input class="writeReview" placeholder="Pendapat Saya...">
+            <button class="submitReview">Submit</button>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="containerFooter">
+            <h2 class="rmkedaton">Rumah Makan <br/>kedaton</h2>
+            <div class="footerNav">
+                <a href="#">Menu</a>
+                <a href="#">Catering</a>
+                <a href="#">Lokasi</a>
+                <a href="#">Kontak</a>
+            </div>
+        </div>
     </section>
     <script src="/UAS/CODING/main.js"></script>
 </body>
